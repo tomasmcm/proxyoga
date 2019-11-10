@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>proxYoga</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <meta name="description" content="Single use proxy endpoint with ease." />
+  <meta property="og:site_name" content="proxYoga" />
+  <meta property="og:title" content="proxYoga" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="Single use proxy endpoint with ease." />
+  <meta property="og:url" content="http://proxyo.ga" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link href="https://fonts.googleapis.com/css?family=Dokdo|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <noscript>
+    <style>
+      body {
+        overflow: auto !important;
+      }
+      
+      #main {
+        opacity: 1.0 !important;
+        -moz-transform: none !important;
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+        -moz-transition: none !important;
+        -webkit-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+        -moz-filter: none !important;
+        -webkit-filter: none !important;
+        -ms-filter: none !important;
+        filter: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body class="is-loading">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" display="none" width="0" height="0">
+    <symbol id="icon-azure" viewBox="0 0 40 36">
+      <path d="M39.74 16.63l-1.94-1.87-8.62-8.07c-.37-.36-.93-.36-1.37 0-.38.36-.5 1.02 0 1.39l9.06 8.55a1 1 0 010 1.39l-9.25 8.86a1 1 0 000 1.38c.38.37 1.07.3 1.38 0l8.62-8.25 2.12-2c.38-.35.31-1.02 0-1.38zM3.32 18.02a1 1 0 010-1.39l8.87-8.55c.5-.37.38-1.03 0-1.4-.44-.35-1-.35-1.37 0L2.2 14.77.26 16.63c-.31.36-.38 1.03 0 1.39l1.94 2.11.06.06L11 28.27c.32.3 1 .36 1.38 0a1 1 0 000-1.39l-9.06-8.86zM30 11.99h-8.38L29.75 0H17.57L11 17.84l8 .06-6.26 17.65L30 12z"/>
+    </symbol>
+    <symbol id="icon-cloudflare" viewBox="0 0 40 19">
+      <path d="M27.51 17.12c.25-.85.16-1.62-.25-2.2-.38-.52-1.01-.83-1.77-.86l-14.43-.2a.27.27 0 01-.23-.1.32.32 0 01-.03-.27.4.4 0 01.34-.25l14.56-.2a5.21 5.21 0 004.25-3.18l.84-2.17c.03-.1.04-.19.02-.28a9.47 9.47 0 00-18.23-.97 4.27 4.27 0 00-6.7 4.47 6.06 6.06 0 00-5.82 6.93c.02.14.14.25.28.25h26.64c.15 0 .29-.1.34-.26l.2-.71zM32.11 7.84l-.4.01c-.1 0-.17.07-.2.17l-.57 1.96c-.25.84-.15 1.61.26 2.19.37.53 1 .83 1.77.87l3.07.18c.1 0 .17.05.22.12.05.07.06.18.04.26a.4.4 0 01-.34.26l-3.2.18a5.2 5.2 0 00-4.26 3.2l-.24.6c-.04.1.04.23.17.23h11c.12 0 .24-.09.28-.22a7.88 7.88 0 00-7.6-10.01z"/>
+    </symbol>
+    <symbol id="icon-firebase" viewBox="0 0 40 40">
+      <path d="M.98 26.11L4.93.78c.14-.87 1.3-1.07 1.7-.3l4.26 7.95L.98 26.11zm28.1 6.16L25.33 8.93a.92.92 0 00-1.55-.5L0 32.27l13.16 7.39c.82.45 1.84.45 2.66 0l13.27-7.39zM18.42 11.91l-3.05-5.8a.9.9 0 00-1.61 0L.36 29.99 18.41 11.9z" />
+    </symbol>
+    <symbol id="icon-lambda" viewBox="0 0 39 40">
+      <path d="M19.26 21.06l-.4.55a48203.73 48203.73 0 00-11 16.2.36.36 0 01-.25.14l-7.5-.08-.11-.02.07-.15a47344.76 47344.76 0 0115.02-23.28c.25-.39.52-.77.76-1.17.06-.11.08-.24.05-.36l-1.4-4.4c-.2-.64-.42-1.26-.6-1.9-.07-.2-.17-.26-.38-.26h-4.7c-.3 0-.3 0-.3-.29V.26c0-.21.07-.26.27-.26h9.46a.3.3 0 01.34.23 54282.37 54282.37 0 0010.8 27.17c.6 1.5 1.22 3.02 1.81 4.54.07.18.15.22.33.16 1.66-.51 3.31-1 4.96-1.52.21-.06.29-.02.35.19l1.71 5.3.06.21c-.12.05-.23.1-.34.13L27 39.98c-.18.06-.23 0-.3-.16a4803.04 4803.04 0 00-6.82-17.23l-.5-1.28-.12-.25z" />
+    </symbol>
+    <symbol id="icon-now" viewBox="0 0 40 40">
+      <path d="M0 36.73h40L20 0 0 36.73zm33.56-1.9h-30L18.41 7.67l15.15 27.14z" />
+    </symbol>
+  </svg>
+  <div id="wrapper" class="wrapper-image">
+    <div id="main">
+      <div class="inner">
+        <div id="container02" class="container default">
+          <div class="inner">
+            <h1 class="text03">proxYoga</h1>
+            <p class="text04">Dealing with CORS issues can be very stressful. Trust me... I feel ya...<br>Breathe in, breathe out, and click one of the buttons below to deploy a proxy server to your desired backend.</p>
+          </div>
+        </div>
+        <div id="container01" class="container default">
+          <div class="inner">
+            <ul id="buttons01" class="buttons">
+              <li>
+                <a href="https://glitch.com/edit/#!/remix/proxy-base" target="_blank" class="button n01">
+                  <img src="./glitch.png" alt="Glitch.com">
+                  <span class="label">Glitch</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button n02" disabled>
+                  <svg>
+                    <use xlink:href="#icon-azure"></use>
+                  </svg><span class="label">Azure</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button n03" disabled>
+                  <svg>
+                    <use xlink:href="#icon-cloudflare"></use>
+                  </svg><span class="label">Cloudflare</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button n04" disabled>
+                  <svg>
+                    <use xlink:href="#icon-firebase"></use>
+                  </svg><span class="label">Firebase</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button n05" disabled>
+                  <svg>
+                    <use xlink:href="#icon-lambda"></use>
+                  </svg><span class="label">AWS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button n06" disabled>
+                  <svg>
+                    <use xlink:href="#icon-now"></use>
+                  </svg><span class="label">Zeit</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="container01" class="container default">
+          <div class="inner">
+            <p class="text04">
+              <small>Made with ❦ by <a href="https://twitter.com/tomasmcm">tomasmcm</a> @ <a href="https://twitter.com/Whitesmithco">whitesmith.co</a></small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var on = addEventListener,
+      $ = function(q) {
+        return document.querySelector(q)
+      },
+      $$ = function(q) {
+        return document.querySelectorAll(q)
+      },
+      $body = document.body,
+      $inner = $('.inner'),
+      client = (function() {
+        var o = {
+          browser: 'other',
+          browserVersion: 0,
+          os: 'other',
+          osVersion: 0,
+          canUse: null
+        },
+        ua = navigator.userAgent,
+        a, i;
+        a = [
+        ['firefox', /Firefox\/([0-9\.]+)/],
+        ['edge', /Edge\/([0-9\.]+)/],
+        ['safari', /Version\/([0-9\.]+).+Safari/],
+        ['chrome', /Chrome\/([0-9\.]+)/],
+        ['ie', /Trident\/.+rv:([0-9]+)/]
+        ];
+        for (i = 0; i < a.length; i++) {
+          if (ua.match(a[i][1])) {
+            o.browser = a[i][0];
+            o.browserVersion = parseFloat(RegExp.$1);
+            break;
+          }
+        }
+        a = [
+        ['ios', /([0-9_]+) like Mac OS X/, function(v) {
+          return v.replace('_', '.').replace('_', '');
+        }],
+        ['ios', /CPU like Mac OS X/, function(v) {
+          return 0
+        }],
+        ['android', /Android ([0-9\.]+)/, null],
+        ['mac', /Macintosh.+Mac OS X ([0-9_]+)/, function(v) {
+          return v.replace('_', '.').replace('_', '');
+        }],
+        ['windows', /Windows NT ([0-9\.]+)/, null],
+        ['undefined', /Undefined/, null],
+        ];
+        for (i = 0; i < a.length; i++) {
+          if (ua.match(a[i][1])) {
+            o.os = a[i][0];
+            o.osVersion = parseFloat(a[i][2] ? (a[i][2])(RegExp.$1) : RegExp.$1);
+            break;
+          }
+        }
+        var _canUse = document.createElement('div');
+        o.canUse = function(p) {
+          var e = _canUse.style,
+          up = p.charAt(0).toUpperCase() + p.slice(1);
+          return (p in e || ('Moz' + up) in e || ('Webkit' + up) in e || ('O' + up) in e || ('ms' + up) in e);
+        };
+        return o;
+      }()),
+      trigger = function(t) {
+        if (client.browser == 'ie') {
+          var e = document.createEvent('Event');
+          e.initEvent(t, false, true);
+          dispatchEvent(e);
+        } else dispatchEvent(new Event(t));
+      },
+      cssRules = function(selectorText) {
+        var ss = document.styleSheets,
+        a = [],
+        f = function(s) {
+          var r = s.cssRules,
+          i;
+          for (i = 0; i < r.length; i++) {
+            if (r[i] instanceof CSSMediaRule && matchMedia(r[i].conditionText).matches)(f)(r[i]);
+            else if (r[i] instanceof CSSStyleRule && r[i].selectorText == selectorText) a.push(r[i]);
+          }
+        },
+        x, i;
+        for (i = 0; i < ss.length; i++) f(ss[i]);
+        return a;
+      };
+      on('load', function() {
+        setTimeout(function() {
+          $body.className = $body.className.replace(/\bis-loading\b/, 'is-playing');
+          setTimeout(function() {
+            $body.className = $body.className.replace(/\bis-playing\b/, 'is-ready');
+          }, 1000);
+        }, 100);
+      });
+      var style, sheet, rule;
+      style = document.createElement('style');
+      style.appendChild(document.createTextNode(''));
+      document.head.appendChild(style);
+      sheet = style.sheet;
+      if (client.os == 'android') {
+        (function() {
+          sheet.insertRule('body::after { }', 0);
+          rule = sheet.cssRules[0];
+          var f = function() {
+            rule.style.cssText = 'height: ' + (Math.max(screen.width, screen.height)) + 'px';
+          };
+          on('load', f);
+          on('orientationchange', f);
+          on('touchmove', f);
+        })();
+      } else if (client.os == 'ios') {
+        if (client.osVersion <= 11)(function() {
+          sheet.insertRule('body::after { }', 0);
+          rule = sheet.cssRules[0];
+          rule.style.cssText = '-webkit-transform: scale(1.0)';
+        })();
+        if (client.osVersion <= 11)(function() {
+          sheet.insertRule('body.ios-focus-fix::before { }', 0);
+          rule = sheet.cssRules[0];
+          rule.style.cssText = 'height: calc(100% + 60px)';
+          on('focus', function(event) {
+            $body.classList.add('ios-focus-fix');
+          }, true);
+          on('blur', function(event) {
+            $body.classList.remove('ios-focus-fix');
+          }, true);
+        })();
+      } else if (client.browser == 'ie') {
+        if (!('matches' in Element.prototype)) Element.prototype.matches = (Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector);
+        (function() {
+          var a = cssRules('body::before'),
+          r;
+          if (a.length > 0) {
+            r = a[0];
+            if (r.style.width.match('calc')) {
+              r.style.opacity = 0.9999;
+              setTimeout(function() {
+                r.style.opacity = 1;
+              }, 100);
+            } else {
+              document.styleSheets[0].addRule('body::before', 'content: none !important;');
+              $body.style.backgroundImage = r.style.backgroundImage.replace('url("images/', 'url("assets/images/');
+              $body.style.backgroundPosition = r.style.backgroundPosition;
+              $body.style.backgroundRepeat = r.style.backgroundRepeat;
+              $body.style.backgroundColor = r.style.backgroundColor;
+              $body.style.backgroundAttachment = 'fixed';
+              $body.style.backgroundSize = r.style.backgroundSize;
+            }
+          }
+        })();
+        (function() {
+          var t, f;
+          f = function() {
+            var mh, h, s, xx, x, i;
+            x = $('#wrapper');
+            x.style.height = 'auto';
+            if (x.scrollHeight <= innerHeight) x.style.height = '100vh';
+            xx = $$('.container.full');
+            for (i = 0; i < xx.length; i++) {
+              x = xx[i];
+              s = getComputedStyle(x);
+              x.style.minHeight = '';
+              x.style.height = '';
+              mh = s.minHeight;
+              x.style.minHeight = 0;
+              x.style.height = '';
+              h = s.height;
+              if (mh == 0) continue;
+              x.style.height = (h > mh ? 'auto' : mh);
+            }
+          };
+          (f)();
+          on('resize', function() {
+            clearTimeout(t);
+            t = setTimeout(f, 250);
+          });
+          on('load', f);
+        })();
+      } else if (client.browser == 'edge') {
+        (function() {
+          var xx = $$('.container > .inner > div:last-child'),
+          x, y, i;
+          for (i = 0; i < xx.length; i++) {
+            x = xx[i];
+            y = getComputedStyle(x.parentNode);
+            if (y.display != 'flex' && y.display != 'inline-flex') continue;
+            x.style.marginLeft = '-1px';
+          }
+        })();
+      }
+      if (!client.canUse('object-fit')) {
+        (function() {
+          var xx = $$('.image[data-position]'),
+          x, w, c, i, src;
+          for (i = 0; i < xx.length; i++) {
+            x = xx[i];
+            c = x.firstElementChild;
+            if (c.tagName != 'IMG') {
+              w = c;
+              c = c.firstElementChild;
+            }
+            if (c.parentNode.classList.contains('deferred')) {
+              c.parentNode.classList.remove('deferred');
+              src = c.getAttribute('data-src');
+              c.removeAttribute('data-src');
+            } else src = c.getAttribute('src');
+            c.style['backgroundImage'] = 'url(\'' + src + '\')';
+            c.style['backgroundSize'] = 'cover';
+            c.style['backgroundPosition'] = x.dataset.position;
+            c.style['backgroundRepeat'] = 'no-repeat';
+            c.src = 'data:image/svg+xml;charset=utf8,' + escape('<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1" viewBox="0 0 1 1"></svg>');
+            if (x.classList.contains('full') && (x.parentNode && x.parentNode.classList.contains('full')) && (x.parentNode.parentNode && x.parentNode.parentNode.parentNode && x.parentNode.parentNode.parentNode.classList.contains('container')) && x.parentNode.children.length == 1) {
+              (function(x, w) {
+                var p = x.parentNode.parentNode,
+                f = function() {
+                  x.style['height'] = '0px';
+                  clearTimeout(t);
+                  t = setTimeout(function() {
+                    if (getComputedStyle(p).flexDirection == 'row') {
+                      if (w) w.style['height'] = '100%';
+                      x.style['height'] = (p.scrollHeight + 1) + 'px';
+                    } else {
+                      if (w) w.style['height'] = 'auto';
+                      x.style['height'] = 'auto';
+                    }
+                  }, 125);
+                },
+                t;
+                on('resize', f);
+                on('load', f);
+                (f)();
+              })(x, w);
+            }
+          }
+        })();
+        (function() {
+          var xx = $$('.gallery img'),
+          x, p, i, src;
+          for (i = 0; i < xx.length; i++) {
+            x = xx[i];
+            p = x.parentNode;
+            if (p.classList.contains('deferred')) {
+              p.classList.remove('deferred');
+              src = x.getAttribute('data-src');
+            } else src = x.getAttribute('src');
+            p.style['backgroundImage'] = 'url(\'' + src + '\')';
+            p.style['backgroundSize'] = 'cover';
+            p.style['backgroundPosition'] = 'center';
+            p.style['backgroundRepeat'] = 'no-repeat';
+            x.style['opacity'] = '0';
+          }
+        })();
+      }(function() {
+        var items = $$('.deferred'),
+        f;
+        if (!('forEach' in NodeList.prototype)) NodeList.prototype.forEach = Array.prototype.forEach;
+        items.forEach(function(p) {
+          var i = p.firstElementChild;
+          p.style.backgroundImage = 'url(' + i.src + ')';
+          p.style.backgroundSize = '100% 100%';
+          p.style.backgroundPosition = 'top left';
+          p.style.backgroundRepeat = 'no-repeat';
+          i.style.opacity = 0;
+          i.style.transition = 'opacity 0.375s ease-in-out';
+          i.addEventListener('load', function(event) {
+            if (i.dataset.src !== 'done') return;
+            if (Date.now() - i._startLoad < 375) {
+              p.classList.remove('loading');
+              p.style.backgroundImage = 'none';
+              i.style.transition = '';
+              i.style.opacity = 1;
+            } else {
+              p.classList.remove('loading');
+              i.style.opacity = 1;
+              setTimeout(function() {
+                p.style.backgroundImage = 'none';
+              }, 375);
+            }
+          });
+        });
+        f = function() {
+          var height = document.documentElement.clientHeight,
+          top = (client.os == 'ios' ? document.body.scrollTop : document.documentElement.scrollTop),
+          bottom = top + height;
+          items.forEach(function(p) {
+            var i = p.firstElementChild;
+            if (i.offsetParent === null) return true;
+            if (i.dataset.src === 'done') return true;
+            var x = i.getBoundingClientRect(),
+            imageTop = top + Math.floor(x.top) - height,
+            imageBottom = top + Math.ceil(x.bottom) + height,
+            src;
+            if (imageTop <= bottom && imageBottom >= top) {
+              src = i.dataset.src;
+              i.dataset.src = 'done';
+              p.classList.add('loading');
+              i._startLoad = Date.now();
+              i.src = src;
+            }
+          });
+        };
+        on('load', f);
+        on('resize', f);
+        on('scroll', f);
+      })();
+    })();
+  </script>
+</body>
+
+</html>
